@@ -392,13 +392,8 @@ class MainScreenTabView extends StatelessWidget {
           ),
           SizedBox(height: h * 0.05),
           if (state.selectedItem != null)
-            SizedBox(
-              width: double.infinity,
-              child: Expanded(
-                child: TableSection(
-                  item: state.selectedItem!,
-                ),
-              ),
+            TableSection(
+              item: state.selectedItem!,
             ),
           SizedBox(height: h * 0.1),
         ],
